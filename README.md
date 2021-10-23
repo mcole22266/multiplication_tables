@@ -4,7 +4,7 @@ _Work in Progress_
 
 ## Description
 
-A simple project to teach **Jon Cole** _(jcole1597@gmail.com)_ Python stuff as well as have a tool that allows my son to practice Multiplication Tables.
+A simple project to teach **Jon Cole** Python stuff as well as have a tool that allows my son to practice Multiplication Tables.
 
 ## How To Run
 
@@ -14,4 +14,4 @@ A simple project to teach **Jon Cole** _(jcole1597@gmail.com)_ Python stuff as w
 ## Contributors
 
 - Michael Cole (mcole042891@gmail.com)
-- Jon Cole (jcole1597@gmail.com)
+- Jon Cole (jon.cole179@gmail.com)
