@@ -7,7 +7,10 @@
 from random import randint
 from datetime import datetime, timedelta
 
+from Config import Config
 from helpers.log import log
+
+config = Config()
 
 class Prompt:
 
@@ -26,7 +29,7 @@ class Prompt:
         self.elapsed = datetime.now() - self.start
 
         # Return True if time exceeds 30 minutes, else False
-        return self.elapsed > timedelta(minutes=30)
+        return self.elapsed > timedelta(minutes=config.timer_minutes)
 
     def presentQuestion(self):
         '''
@@ -35,9 +38,10 @@ class Prompt:
 
         Returns: Boolean
         '''
+
         # Generate two random values
-        val1 = randint(0, 10)
-        val2 = randint(0, 10)
+        val1 = randint(config.val1_low, config.val1_high)
+        val2 = randint(config.val2_low, config.val2_high)
         # Create the answer
         answer = val1 * val2
 
