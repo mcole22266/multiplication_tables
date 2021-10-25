@@ -1,4 +1,4 @@
 class Config:
 
     def __init__(self):
-        self.logging = True
+        self.logging = False
