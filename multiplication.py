@@ -16,9 +16,20 @@ def main():
     # Ask questions until time is complete
     while not prompt.timeIsUp():
         response = prompt.presentQuestion()
-        print(response)
-        print('===================')
+        if response == "Q":
+            break
+        if response == 'T':
+            print("True")
+        else:
+            print("False")
+        print('=========================================')
+
+    # Calculates Average Score
+        currentScore = prompt.accumulateTotalScore(response)
+        print(f'Current Average Score: {currentScore}')
+    prompt.printStats()
 
 if __name__ == '__main__':
+
     # Run the program
     main()
